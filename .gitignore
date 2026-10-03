@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.py[cod]
+*.m4a
+*.mp3
+*.wav
+*.json
+*.cover.jpeg
+*.cover.jpg
+*.cover.png
+dist/
+build/
+*.egg-info/
+.venv/
+venv/
+downloads/

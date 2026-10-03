@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suno-dl"
+version = "0.1.0"
+description = "Save Suno share-links to stream-quality M4A for personal backup"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "4mrco" }]
+keywords = ["suno", "audio", "downloader", "cli"]
+dependencies = ["cryptography>=40"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.scripts]
+suno-dl = "suno_dl.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/4mrco/suno-dl"
+Issues = "https://github.com/4mrco/suno-dl/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
